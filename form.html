@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body> 
+    <form action="msg.html">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">Firstname</label>
+            <input type="text" id="fname" required pattern="[a-zA-Z]{3,8}"><br><br>
+            <label for="lname">Lastname</label>
+            <input type="text" id="lname" required pattern="[a-zA-Z]{3,8}"><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="example@outlook.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br><br>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob"><br><br>
+            <label for="phone">PhoneNo.</label>
+            <input type="tel" id="phone" required pattern="[6-9][0-9]{9}">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label for="">Department</label>
+            <input type="radio" name="dept" id="cs">
+            <label for="cs">CS</label>
+            <input type="radio" name="dept" id="ec">
+            <label for="ec">EC</label>
+            <input type="radio" name="dept" id="civil">
+            <label for="civil">Civil</label>
+            <input type="radio" name="dept" id="mech">
+            <label for="mech">Mech</label><br><br>
+
+            <label for="">Skills</label>
+            <input type="checkbox" name="" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="" id="js">
+            <label for="js">Js</label>
+            <input type="checkbox" name="" id="java">
+            <label for="java">Java</label><br><br>
+
+            <label for="">YearOfGraduation</label>
+            <select name="" id="">
+                <option value="">2022</option>
+                <option value="">2023</option>
+                <option value="">2024</option>
+            </select>
+        </fieldset><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
